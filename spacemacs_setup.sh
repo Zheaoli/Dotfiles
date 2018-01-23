@@ -9,5 +9,5 @@ emacs
 rm ~/.spacemacs
 rm -rf ~/.spacmacs.d
 
-ln -s ~/github/Dotfiles/.spacemacs.d ~/.spacemacs.d
+ln -s ~/github/Dotfiles/.spacemacs.d/ ~/.spacemacs.d
 
