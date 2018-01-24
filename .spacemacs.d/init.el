@@ -41,9 +41,9 @@ values."
      git
      markdown
      org
-     syntax-checking
+     ;; syntax-checking
      python
-     javascript
+     ;; javascript
      c-c++
      (colors :variables
              colors-enable-nyan-cat-progress-bar t)
