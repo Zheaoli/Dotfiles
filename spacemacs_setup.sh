@@ -1,16 +1,13 @@
 
 rm ~/.spacemacs
 rm -rf ~/.spacmacs.d
-
 rm -rf ~/.emacs.d
-git clone https://github.com/syl20bnr/spacemacs ~/.emacs.d
-emacs
 
-rm ~/.spacemacs
-rm -rf ~/.spacmacs.d
 
 ln -s ~/github/Dotfiles/.spacemacs.d/ ~/.spacemacs.d
+ln -s ~/github/Dotfiles/spacemacs/ ~/.emacs.d
 
-# fix
+# fix error
 rm ~/github/Dotfiles/.spacemacs.d/.spacemacs.d
+rm ~/github/Dotfiles/spacemacs/.emacs.d
 
