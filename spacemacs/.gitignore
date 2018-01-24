@@ -1,6 +1,2 @@
-eshell/history
-.emacs.desktop
-.emacs.desktop.lock
-eshell/lastdir
 *.elc
 .cache
