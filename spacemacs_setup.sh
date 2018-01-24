@@ -11,3 +11,6 @@ rm -rf ~/.spacmacs.d
 
 ln -s ~/github/Dotfiles/.spacemacs.d/ ~/.spacemacs.d
 
+# fix
+rm ~/github/Dotfiles/.spacemacs.d/.spacemacs.d
+
