@@ -303,6 +303,12 @@ executes.
 before packages are loaded. If you are unsure, you should try in setting them in
 `dotspacemacs/user-config' first."
 
+  ;; for some bin in usr/local/bin
+  (setenv "PATH" (concat (getenv "PATH") ":/usr/local/bin"))
+  (setq exec-path (append exec-path '("/usr/local/bin")))
+
+  ;; theos - for jailbreak iOS Tweak files
+  (add-to-list 'auto-mode-alist '("\\.xm$" . objc-mode))
 
   )
 
