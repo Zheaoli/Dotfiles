@@ -52,8 +52,10 @@ install() {
     ln -s $HOME/.fvim/vimrc $HOME/.vimrc
 
     color_print "Installing vim-plug..."
-    #curl -fLo ~/.vim/autoload/plug.vim --create-dirs https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
     mkdir -p ~/.vim/autoload/
+
+    #curl -fLo ~/.vim/autoload/plug.vim --create-dirs https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
+    #or 
     cp ~/.fvim/temp/plug.vim ~/.vim/autoload/plug.vim
 
     color_print "Installing colortheme..."
@@ -69,7 +71,7 @@ install() {
     rm ~/.config/flake8
     ln -s ~/.fvim/flake8 ~/.config/flake8
 
-    color_print "Notice: For Golang develop run :GoInstallBinaries in vim"
+    color_print "Notice: For Golang develop run :GoInstallBinaries in vim(when .go file is open)"
 
     color_print "fvim has been installed. Just enjoy vimming!"
 }
