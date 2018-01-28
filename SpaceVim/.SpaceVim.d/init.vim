@@ -3,20 +3,20 @@ let g:spacevim_enable_debug = 1
 let g:spacevim_realtime_leader_guide = 1
 
 call SpaceVim#layers#load('incsearch')
+call SpaceVim#layers#load('lang#vim')
 call SpaceVim#layers#load('lang#c')
-"call SpaceVim#layers#load('lang#elixir')
+call SpaceVim#layers#load('lang#python')
+call SpaceVim#layers#load('lang#javascript')
 call SpaceVim#layers#load('lang#go')
+call SpaceVim#layers#load('lang#rust')
+"call SpaceVim#layers#load('lang#elixir')
 "call SpaceVim#layers#load('lang#haskell')
 "call SpaceVim#layers#load('lang#java')
-call SpaceVim#layers#load('lang#javascript')
 "call SpaceVim#layers#load('lang#lua')
 "call SpaceVim#layers#load('lang#perl')
 "call SpaceVim#layers#load('lang#php')
-call SpaceVim#layers#load('lang#python')
-"call SpaceVim#layers#load('lang#rust')
 "call SpaceVim#layers#load('lang#swig')
 "call SpaceVim#layers#load('lang#tmux')
-call SpaceVim#layers#load('lang#vim')
 "call SpaceVim#layers#load('lang#xml')
 call SpaceVim#layers#load('shell')   
 call SpaceVim#layers#load('tools#screensaver')
@@ -71,8 +71,9 @@ let g:spacevim_relativenumber = 0
 call SpaceVim#custom#SPC('nmap', ['c', 'c'], '<Plug>NERDCommenterInvert', 'comment or uncomment lines', 0)
 
 
-" Set .m file type default to objc
+" Set .m/.xm file type default to objc
 autocmd BufEnter *.m setlocal ft=objc
+autocmd BufEnter *.xm setlocal ft=objc
 
 " Json concealing
 " Not work , why ? 
