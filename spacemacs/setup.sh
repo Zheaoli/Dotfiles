@@ -3,7 +3,7 @@ DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
 echo "Dir = ${DIR}"
 
 rm ~/.spacemacs
-rm -rf ~/.spacmacs.d
+rm -rf ~/.spacemacs.d
 rm -rf ~/.emacs.d
 
 ln -s $DIR/.spacemacs.d/ ~/.spacemacs.d
