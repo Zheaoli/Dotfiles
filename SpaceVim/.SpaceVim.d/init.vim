@@ -62,7 +62,7 @@ set timeoutlen=200
 " font
 " How to install : https://github.com/ryanoasis/nerd-fonts
 " How to set : https://github.com/dofy/7th-vim/issues/3
-let g:spacevim_guifont='Knack\ Nerd\ Font:h12'
+let g:spacevim_guifont='Knack\ Nerd\ Font:h13'
 
 " Relative line number
 let g:spacevim_relativenumber = 0
