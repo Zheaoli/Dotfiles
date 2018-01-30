@@ -67,15 +67,19 @@ let g:spacevim_guifont='Knack\ Nerd\ Font:h13'
 " Relative line number
 let g:spacevim_relativenumber = 0
 
-" Comment lines
+" Comment lines using SPC c c
 call SpaceVim#custom#SPC('nmap', ['c', 'c'], '<Plug>NERDCommenterInvert', 'comment or uncomment lines', 0)
 
-
-" Set .m/.xm file type default to objc
+" Set .m/.xm file type default to objc type
 autocmd BufEnter *.m setlocal ft=objc
 autocmd BufEnter *.xm setlocal ft=objc
 
-" Json concealing
-" Not work , why ? 
-"autocmd BufEnter *.json setlocal conceallevel=0
+" Navigation between windows
+nnoremap <C-J> <C-W>j
+nnoremap <C-K> <C-W>k
+nnoremap <C-H> <C-W>h
+nnoremap <C-L> <C-W>l
+
+" Select entire buffer
+nnoremap vaa ggvGg_
 
