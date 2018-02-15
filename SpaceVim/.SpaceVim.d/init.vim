@@ -83,3 +83,10 @@ nnoremap <C-L> <C-W>l
 " Select entire buffer
 nnoremap vaa ggvGg_
 
+
+"let g:vimfiler_ignore_pattern = '^\%(\.git\|\.DS_Store\)$'
+"
+let g:spacevim_filemanager = 'nerdtree'
+
+
+
